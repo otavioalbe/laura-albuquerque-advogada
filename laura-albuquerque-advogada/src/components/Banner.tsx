@@ -1,7 +1,7 @@
 export default function Banner() {
     return (
         <div>
-            <h1>Banner</h1>
+            <h1 className="text-3xl font-bold underline bg-red-500">Banner</h1>
         </div>
     )
 }
