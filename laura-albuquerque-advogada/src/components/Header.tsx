@@ -1,7 +1,7 @@
 function Header() {
     return (
-        <div>
-            <h1>Header</h1>
+        <div className="w-full bg-primary h-[88px] flex items-center">
+            Oi
         </div>
     )
 }
