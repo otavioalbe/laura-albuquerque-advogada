@@ -1,23 +1,32 @@
+// eslint.config.js
 import js from '@eslint/js'
 import globals from 'globals'
+import tseslint from 'typescript-eslint'
 import reactHooks from 'eslint-plugin-react-hooks'
 import reactRefresh from 'eslint-plugin-react-refresh'
-import tseslint from 'typescript-eslint'
-import { globalIgnores } from 'eslint/config'
+import eslintConfigPrettier from 'eslint-config-prettier' // <- desativa regras que conflitam com Prettier
 
 export default tseslint.config([
-  globalIgnores(['dist']),
+  { ignores: ['dist'] },
   {
-    files: ['**/*.{ts,tsx}'],
+    files: ['**/*.{ts,tsx,js,jsx}'],
+    languageOptions: {
+      ecmaVersion: 2023,
+      sourceType: 'module',
+      globals: globals.browser,
+    },
     extends: [
       js.configs.recommended,
-      tseslint.configs.recommended,
+      ...tseslint.configs.recommended,
       reactHooks.configs['recommended-latest'],
       reactRefresh.configs.vite,
+      // Mantém por último: garante que regras de estilo do ESLint não
+      // briguem com o Prettier
+      eslintConfigPrettier,
     ],
-    languageOptions: {
-      ecmaVersion: 2020,
-      globals: globals.browser,
+    rules: {
+      // Suas regras adicionais aqui, se quiser
+      // Ex.: 'react-refresh/only-export-components': 'off',
     },
   },
 ])
