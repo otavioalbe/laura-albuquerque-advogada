@@ -1,19 +1,23 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @theme {
   --color-primary: #828673;
-  --color-secondary: #F2ECE7;
-  --color-black: #3A3A3A;
+  --color-secondary: #f2ece7;
+  --color-black: #3a3a3a;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 16px;
-    line-height: 1.5;
-    color: var(--color-black);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Helvetica', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-black);
+}
+
+.bevenida {
+  font-family: 'Bevenida', sans-serif;
 }

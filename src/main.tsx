@@ -7,8 +7,8 @@ import './assets/index.css';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
+    <Header />
     <Container>
-      <Header />
       <Banner />
     </Container>
   </StrictMode>
