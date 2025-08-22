@@ -1,6 +1,10 @@
 @import 'tailwindcss';
 
-/* Font Face Declaration - Apple Garamond */
+html,
+body {
+  background-color: var(--color-primary);
+}
+
 @font-face {
   font-family: 'Apple Garamond';
   src: url('./fonts/AppleGaramond.ttf') format('truetype');

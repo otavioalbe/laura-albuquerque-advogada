@@ -11,7 +11,7 @@ function Header() {
           <img
             src="../src/assets/images/logo.webp"
             alt="logo"
-            className="w-[300px] h-[300px] md:w-[350px] md:h-[350px] xl:w-[450px] xl:h-[450px] !ml-[-55px] md:!ml-[-50px] xl:!ml-[-75px]"
+            className="w-[350px] h-[300px] md:w-[400px] md:h-[350px] xl:w-[500px] xl:h-[450px] !ml-[-65px] md:!ml-[-50px] xl:!ml-[-62px]"
           />
         </div>
         {!isMobile && (
