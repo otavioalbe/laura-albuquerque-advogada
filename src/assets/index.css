@@ -1,5 +1,14 @@
 @import 'tailwindcss';
 
+/* Font Face Declaration - Apple Garamond */
+@font-face {
+  font-family: 'Apple Garamond';
+  src: url('./fonts/AppleGaramond.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme {
   --color-primary: #828673;
   --color-secondary: #f2ece7;
@@ -18,7 +27,7 @@
   color: var(--color-black);
 }
 
-.bevenida {
-  font-family: 'Bevenida', sans-serif;
+.apple-garamond {
+  font-family: 'Apple Garamond', 'Times New Roman', serif;
   letter-spacing: 0.02em;
 }

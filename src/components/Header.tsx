@@ -5,7 +5,7 @@ function Header() {
   const { isMobile } = useBreakpoints();
 
   return (
-    <div className="w-full bg-primary h-[120px] flex items-center justify-center !px-4">
+    <div className="w-full bg-primary h-[120px] flex items-center justify-center !px-4 relative">
       <div className="flex items-center justify-between w-full !max-w-[328px] md:!max-w-full xl:!max-w-[1318px] relative">
         <div className="flex items-center flex-shrink-0">
           <img
@@ -16,14 +16,16 @@ function Header() {
         </div>
         {!isMobile && (
           <div className="flex items-center md:gap-x-3 xl:gap-x-5 flex-shrink-0 !pr-4">
-            <h1 className="!text-secondary bevenida md:!text-lg whitespace-nowrap">
+            <h1 className="!text-secondary apple-garamond md:!text-2xl whitespace-nowrap">
               Página Inicial
             </h1>
-            <h1 className="!text-secondary bevenida md:!text-lg whitespace-nowrap">Sobre</h1>
-            <h1 className="!text-secondary bevenida md:!text-lg whitespace-nowrap">
+            <h1 className="!text-secondary apple-garamond md:!text-2xl whitespace-nowrap">Sobre</h1>
+            <h1 className="!text-secondary apple-garamond md:!text-2xl whitespace-nowrap">
               Áreas de atuação
             </h1>
-            <h1 className="!text-secondary bevenida md:!text-lg whitespace-nowrap">Contato</h1>
+            <h1 className="!text-secondary apple-garamond md:!text-2xl whitespace-nowrap">
+              Contato
+            </h1>
           </div>
         )}
         {isMobile && <Hamburguer />}
