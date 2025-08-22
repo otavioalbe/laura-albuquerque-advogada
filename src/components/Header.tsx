@@ -35,7 +35,7 @@ function Header() {
 
       {(isMobile || isTablet) && (
         <div
-          className={`absolute top-full left-0 right-0 bg-primary !pb-4 h-[180px] flex flex-col items-center justify-center w-full transition-all duration-300 ease-in-out ${
+          className={`z-10 absolute top-full left-0 right-0 bg-primary !pb-4 h-[180px] flex flex-col items-center justify-center w-full transition-all duration-300 ease-in-out ${
             isMenuOpen
               ? 'opacity-100 visible translate-y-0'
               : 'opacity-0 invisible -translate-y-full'

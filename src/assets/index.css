@@ -35,3 +35,115 @@ body {
   font-family: 'Apple Garamond', 'Times New Roman', serif;
   letter-spacing: 0.02em;
 }
+
+.header-1 {
+  font-size: 5rem;
+  font-weight: 400;
+  line-height: 72px;
+}
+
+.header-2 {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 38.4px;
+}
+
+.header-3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 28.8px;
+}
+
+.body-large {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.body-regular {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.body-small {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+@media screen and (max-width: 1365px) {
+  .header-1 {
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 48px;
+  }
+
+  .header-2 {
+    font-size: 1.75rem;
+    font-weight: 400;
+    line-height: 33.6px;
+  }
+
+  .header-3 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .body-large {
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 27px;
+  }
+
+  .body-regular {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 21px;
+  }
+
+  .body-small {
+    font-size: 0.8125rem;
+    font-weight: 400;
+    line-height: 19.5px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header-1 {
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 48px;
+  }
+
+  .header-2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 28.8px;
+  }
+
+  .header-3 {
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 21.6px;
+  }
+
+  .body-large {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .body-regular {
+    font-size: 0.8125rem;
+    font-weight: 400;
+    line-height: 19.5px;
+  }
+
+  .body-small {
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 18px;
+  }
+}
