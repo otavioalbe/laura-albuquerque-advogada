@@ -3,7 +3,7 @@ import { useAboutConstants } from '../constants/useAboutConstants';
 
 export default function About() {
   return (
-    <div className="w-full bg-secondary">
+    <div id="about" className="w-full bg-secondary">
       <Container>
         <div className="flex xl:flex-row flex-col gap-x-10 gap-y-6 !py-10">
           <div className="flex flex-col xl:w-[700px] w-full">

@@ -1,5 +1,9 @@
 @import 'tailwindcss';
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   background-color: var(--color-primary);
@@ -172,7 +176,6 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* Estilos customizados para Swiper */
 .swiper {
   padding-bottom: 40px !important;
 }
@@ -191,7 +194,6 @@ body {
   opacity: 1 !important;
 }
 
-/* Título com linhas laterais */
 .title-with-lines {
   position: relative;
   display: inline-block;
@@ -216,7 +218,6 @@ body {
   right: -220px;
 }
 
-/* Responsivo para tablets */
 @media screen and (max-width: 1365px) {
   .title-with-lines::before,
   .title-with-lines::after {
@@ -232,7 +233,6 @@ body {
   }
 }
 
-/* Responsivo para mobile */
 @media screen and (max-width: 767px) {
   .title-with-lines::before,
   .title-with-lines::after {
@@ -240,7 +240,6 @@ body {
   }
 }
 
-/* Centralização perfeita dos cards no mobile */
 @media screen and (max-width: 767px) {
   .swiper-slide {
     display: flex !important;
