@@ -36,6 +36,18 @@ body {
   letter-spacing: 0.02em;
 }
 
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.text-shadow-light {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.text-shadow-strong {
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+}
+
 .header-1 {
   font-size: 5rem;
   font-weight: 400;
@@ -158,4 +170,81 @@ body {
 .button-hover:hover {
   transform: scale(1.05);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilos customizados para Swiper */
+.swiper {
+  padding-bottom: 40px !important;
+}
+
+.swiper-pagination {
+  bottom: 0 !important;
+}
+
+.swiper-pagination-bullet {
+  background-color: var(--color-secondary) !important;
+  opacity: 0.5 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--color-secondary) !important;
+  opacity: 1 !important;
+}
+
+/* Título com linhas laterais */
+.title-with-lines {
+  position: relative;
+  display: inline-block;
+}
+
+.title-with-lines::before,
+.title-with-lines::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 200px;
+  height: 2px;
+  background-color: var(--color-secondary);
+  transform: translateY(-50%);
+}
+
+.title-with-lines::before {
+  left: -220px;
+}
+
+.title-with-lines::after {
+  right: -220px;
+}
+
+/* Responsivo para tablets */
+@media screen and (max-width: 1365px) {
+  .title-with-lines::before,
+  .title-with-lines::after {
+    width: 150px;
+  }
+
+  .title-with-lines::before {
+    left: -170px;
+  }
+
+  .title-with-lines::after {
+    right: -170px;
+  }
+}
+
+/* Responsivo para mobile */
+@media screen and (max-width: 767px) {
+  .title-with-lines::before,
+  .title-with-lines::after {
+    display: none;
+  }
+}
+
+/* Centralização perfeita dos cards no mobile */
+@media screen and (max-width: 767px) {
+  .swiper-slide {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
 }
