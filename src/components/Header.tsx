@@ -30,25 +30,25 @@ function Header() {
         {!isMobile && !isTablet && (
           <div className="flex items-center md:gap-x-3 xl:gap-x-5 flex-shrink-0 !pr-4">
             <h1
-              className="!text-secondary !header-2 whitespace-nowrap cursor-pointer hover:opacity-80 transition-opacity"
+              className="!font-serif !text-secondary !text-xl whitespace-nowrap cursor-pointer hover:opacity-80 transition-opacity"
               onClick={() => scrollToSection('home')}
             >
               Página Inicial
             </h1>
             <h1
-              className="!text-secondary !header-2 whitespace-nowrap cursor-pointer hover:opacity-80 transition-opacity"
+              className="!font-serif !text-secondary !text-xl whitespace-nowrap cursor-pointer hover:opacity-80 transition-opacity"
               onClick={() => scrollToSection('about')}
             >
               Sobre
             </h1>
             <h1
-              className="!text-secondary !header-2 whitespace-nowrap cursor-pointer hover:opacity-80 transition-opacity"
+              className="!font-serif !text-secondary !text-xl whitespace-nowrap cursor-pointer hover:opacity-80 transition-opacity"
               onClick={() => scrollToSection('fields')}
             >
               Áreas de atuação
             </h1>
             <h1
-              className="!text-secondary !header-2 whitespace-nowrap cursor-pointer hover:opacity-80 transition-opacity"
+              className="!font-serif !text-secondary !text-xl whitespace-nowrap cursor-pointer hover:opacity-80 transition-opacity"
               onClick={() => scrollToSection('contact')}
             >
               Contato
@@ -68,25 +68,25 @@ function Header() {
         >
           <div className="flex flex-col items-center justify-center gap-y-4">
             <h1
-              className="!text-secondary !header-2 cursor-pointer hover:opacity-80 transition-opacity"
+              className="!font-serif !text-secondary !header-2 cursor-pointer hover:opacity-80 transition-opacity"
               onClick={() => scrollToSection('home')}
             >
               Página Inicial
             </h1>
             <h1
-              className="!text-secondary !header-2 cursor-pointer hover:opacity-80 transition-opacity"
+              className="!font-serif !text-secondary !header-2 cursor-pointer hover:opacity-80 transition-opacity"
               onClick={() => scrollToSection('about')}
             >
               Sobre
             </h1>
             <h1
-              className="!text-secondary !header-2 cursor-pointer hover:opacity-80 transition-opacity"
+              className="!font-serif !text-secondary !header-2 cursor-pointer hover:opacity-80 transition-opacity"
               onClick={() => scrollToSection('fields')}
             >
               Áreas de atuação
             </h1>
             <h1
-              className="!text-secondary !header-2 cursor-pointer hover:opacity-80 transition-opacity"
+              className="!font-serif !text-secondary !header-2 cursor-pointer hover:opacity-80 transition-opacity"
               onClick={() => scrollToSection('contact')}
             >
               Contato
