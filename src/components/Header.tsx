@@ -43,11 +43,14 @@ function Header() {
             </h1>
             <h1
               className="!text-secondary !header-2 whitespace-nowrap cursor-pointer hover:opacity-80 transition-opacity"
-              onClick={() => scrollToSection('activity')}
+              onClick={() => scrollToSection('fields')}
             >
               Áreas de atuação
             </h1>
-            <h1 className="!text-secondary !header-2 whitespace-nowrap cursor-pointer hover:opacity-80 transition-opacity">
+            <h1
+              className="!text-secondary !header-2 whitespace-nowrap cursor-pointer hover:opacity-80 transition-opacity"
+              onClick={() => scrollToSection('contact')}
+            >
               Contato
             </h1>
           </div>
@@ -66,23 +69,26 @@ function Header() {
           <div className="flex flex-col items-center justify-center gap-y-4">
             <h1
               className="!text-secondary !header-2 cursor-pointer hover:opacity-80 transition-opacity"
-              onClick={() => scrollToSection('inicio')}
+              onClick={() => scrollToSection('home')}
             >
               Página Inicial
             </h1>
             <h1
               className="!text-secondary !header-2 cursor-pointer hover:opacity-80 transition-opacity"
-              onClick={() => scrollToSection('sobre')}
+              onClick={() => scrollToSection('about')}
             >
               Sobre
             </h1>
             <h1
               className="!text-secondary !header-2 cursor-pointer hover:opacity-80 transition-opacity"
-              onClick={() => scrollToSection('diferenciais')}
+              onClick={() => scrollToSection('fields')}
             >
               Áreas de atuação
             </h1>
-            <h1 className="!text-secondary !header-2 cursor-pointer hover:opacity-80 transition-opacity">
+            <h1
+              className="!text-secondary !header-2 cursor-pointer hover:opacity-80 transition-opacity"
+              onClick={() => scrollToSection('contact')}
+            >
               Contato
             </h1>
           </div>
