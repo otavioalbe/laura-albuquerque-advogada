@@ -18,12 +18,20 @@ export default function Banner() {
 
   return (
     <div className="grid grid-cols-1 grid-rows-1 w-full h-[500px] xl:h-[600px] relative">
-      <div
-        className="!z-0 col-start-1 row-start-1 h-[500px] xl:h-[600px] w-full bg-cover bg-center bg-fixed"
-        style={{
-          backgroundImage: 'url("../src/assets/images/banner.png")',
-        }}
-      />
+      {isMobile ? (
+        <img
+          src="../src/assets/images/banner.png"
+          alt="banner"
+          className="!z-0 col-start-1 row-start-1 object-cover h-[500px] xl:h-[600px] w-full"
+        />
+      ) : (
+        <div
+          className="!z-0 col-start-1 row-start-1 h-[500px] xl:h-[600px] w-full bg-cover bg-center bg-fixed"
+          style={{
+            backgroundImage: 'url("../src/assets/images/banner.png")',
+          }}
+        />
+      )}
       <Container>
         <div className="z-10 flex !w-full">
           <div className="self-center">
