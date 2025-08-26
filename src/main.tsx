@@ -5,6 +5,7 @@ import About from './components/About';
 import Banner from './components/Banner';
 import Differences from './components/Differences';
 import Fields from './components/Fields';
+import Contact from './components/Contact';
 import './assets/index.css';
 
 createRoot(document.getElementById('root')!).render(
@@ -14,5 +15,6 @@ createRoot(document.getElementById('root')!).render(
     <About />
     <Differences />
     <Fields />
+    <Contact />
   </StrictMode>
 );
