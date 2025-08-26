@@ -2,7 +2,7 @@ import Container from './Container';
 
 export default function Contact() {
   return (
-    <div className="bg-primary w-full">
+    <div id="contact" className="bg-primary w-full">
       <Container>
         <div className="!py-10 flex flex-col md:flex-row justify-between">
           <div className="flex flex-col xl:w-[612px] md:self-start self-center items-center md:items-start text-center md:text-left">
