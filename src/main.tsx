@@ -7,6 +7,7 @@ import Differences from './components/Differences';
 import Fields from './components/Fields';
 import Contact from './components/Contact';
 import Feedbacks from './components/Feedbacks';
+import Footer from './components/Footer';
 import './assets/index.css';
 
 createRoot(document.getElementById('root')!).render(
@@ -18,5 +19,6 @@ createRoot(document.getElementById('root')!).render(
     <Fields />
     <Contact />
     <Feedbacks />
+    <Footer />
   </StrictMode>
 );

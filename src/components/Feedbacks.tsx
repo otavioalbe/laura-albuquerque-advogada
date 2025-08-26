@@ -2,7 +2,7 @@ import Container from './Container';
 
 export default function Feedbacks() {
   return (
-    <div className="bg-secondary w-full">
+    <div className="bg-secondary w-full relative shadow-[inset_0_0_50px_rgba(0,0,0,0.3)]">
       <Container>
         <div className="flex flex-col items-center justify-center !my-10">
           <h1 className="apple-garamond xl:!text-6xl !text-4xl !mb-10">Avaliações</h1>
