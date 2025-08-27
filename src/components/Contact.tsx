@@ -1,6 +1,16 @@
 import Container from './Container';
+import { useState, useEffect } from 'react';
 
 export default function Contact() {
+  const [isMapLoading, setIsMapLoading] = useState(true);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setIsMapLoading(false);
+    }, 3000);
+
+    return () => clearTimeout(timeout);
+  }, []);
   return (
     <div id="contact" className="bg-primary w-full">
       <Container>
@@ -47,12 +57,19 @@ export default function Contact() {
               </a>
             </div>
           </div>
-          <div className="xl:w-full md:w-[300px] xl:h-[410px] md:h-[360px] h-[400px] md:!mt-0 !mt-10">
+          <div className="xl:w-full md:w-[300px] xl:h-[410px] md:h-[360px] h-[400px] md:!mt-0 !mt-10 relative">
+            {isMapLoading && (
+              <div className="absolute inset-0 bg-gray-200 !rounded-xl flex items-center justify-center">
+                <p className="text-gray-500 body-regular">Carregando mapa...</p>
+              </div>
+            )}
             <iframe
               src="https://www.google.com/maps/d/u/2/embed?mid=1rEOWoIBUdD8Z6qicn5VQGPXtgrVq8-0&ehbc=2E312F"
               loading="lazy"
               allowFullScreen={true}
               className="w-full h-full !rounded-xl"
+              onLoad={() => setIsMapLoading(false)}
+              style={{ opacity: isMapLoading ? 0 : 1 }}
             ></iframe>
           </div>
         </div>
