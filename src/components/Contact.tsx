@@ -79,21 +79,21 @@ export default function Contact() {
             target="_blank"
             className="hover:scale-110 transition-all duration-300"
           >
-            <img src="../src/assets/icons/whatsapp.svg" alt="WhatsApp" className="w-12 h-12" />
+            <img src="./assets/icons/whatsapp.svg" alt="WhatsApp" className="w-12 h-12" />
           </a>
           <a
             href="https://www.instagram.com/lauradcalbuquerque/"
             target="_blank"
             className="hover:scale-110 transition-all duration-300"
           >
-            <img src="../src/assets/icons/instagram.svg" alt="Instagram" className="w-12 h-12" />
+            <img src="./assets/icons/instagram.svg" alt="Instagram" className="w-12 h-12" />
           </a>
           <a
             href="https://www.linkedin.com/in/laura-albuquerque/"
             target="_blank"
             className="hover:scale-110 transition-all duration-300"
           >
-            <img src="../src/assets/icons/linkedin.svg" alt="LinkedIn" className="w-12 h-12" />
+            <img src="./assets/icons/linkedin.svg" alt="LinkedIn" className="w-12 h-12" />
           </a>
         </div>
       </Container>

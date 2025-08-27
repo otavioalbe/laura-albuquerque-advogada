@@ -20,7 +20,7 @@ export default function Banner() {
     <div className="grid grid-cols-1 grid-rows-1 w-full h-[500px] xl:h-[600px] relative">
       {isMobile ? (
         <img
-          src="../src/assets/images/banner.png"
+          src="./assets/images/banner.png"
           alt="banner"
           className="!z-0 col-start-1 row-start-1 object-cover h-[500px] xl:h-[600px] w-full"
         />
@@ -28,7 +28,7 @@ export default function Banner() {
         <div
           className="!z-0 col-start-1 row-start-1 h-[500px] xl:h-[600px] w-full bg-cover bg-center bg-fixed"
           style={{
-            backgroundImage: 'url("../src/assets/images/banner.png")',
+            backgroundImage: 'url("./assets/images/banner.png")',
           }}
         />
       )}
@@ -36,7 +36,7 @@ export default function Banner() {
         <div className="z-10 flex !w-full">
           <div className="self-center">
             <img
-              src="../src/assets/images/laura-label.png"
+              src="./assets/images/laura-label.png"
               alt="banner"
               className={`${responsiveLabel()} !mb-3`}
             />

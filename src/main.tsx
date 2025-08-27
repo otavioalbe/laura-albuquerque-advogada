@@ -8,7 +8,7 @@ import Fields from './components/Fields';
 import Contact from './components/Contact';
 import Feedbacks from './components/Feedbacks';
 import Footer from './components/Footer';
-import './assets/index.css';
+import '../public/assets/index.css';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
