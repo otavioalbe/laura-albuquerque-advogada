@@ -38,7 +38,6 @@ export default function Feedbacks() {
             )}
             <div
               className="elfsight-app-3a7fda65-769d-44fa-af0f-05b92de905fb"
-              data-elfsight-app-lazy
               style={{
                 opacity: isLoading ? 0 : 1,
                 transition: 'opacity 0.2s ease-in',
