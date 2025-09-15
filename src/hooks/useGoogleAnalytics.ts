@@ -8,14 +8,6 @@ export const useGoogleAnalytics = () => {
         event_label: label,
         value: value,
       });
-
-      // Log para debug (pode ser removido em produção)
-      console.log('Google Analytics Event:', {
-        action,
-        category,
-        label,
-        value,
-      });
     } else {
       console.warn('Google Analytics (gtag) não está disponível');
     }
