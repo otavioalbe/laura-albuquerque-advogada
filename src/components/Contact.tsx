@@ -11,6 +11,11 @@ export default function Contact() {
 
     return () => clearTimeout(timeout);
   }, []);
+
+  const message = encodeURIComponent(
+    'Olá! Gostaria de saber mais sobre os serviços jurídicos da Dra. Laura Albuquerque. Poderia me ajudar?'
+  );
+
   return (
     <div id="contact" className="bg-primary w-full">
       <Container>
@@ -26,7 +31,7 @@ export default function Contact() {
               <p className="!text-secondary body-regular">
                 Tel:{' '}
                 <a
-                  href="https://wa.me/5554991184768"
+                  href={`https://wa.me/5554991184768?text=${message}`}
                   target="_blank"
                   className="!text-secondary body-regular hover:underline"
                 >
@@ -75,7 +80,7 @@ export default function Contact() {
         </div>
         <div className="flex items-center justify-center gap-x-4 xl:!mt-5 !mt-2 !mb-8">
           <a
-            href="https://wa.me/5554991184768"
+            href={`https://wa.me/5554991184768?text=${message}`}
             target="_blank"
             className="hover:scale-110 transition-all duration-300"
           >

@@ -16,6 +16,10 @@ export default function Banner() {
     return '!ml-[570px]';
   };
 
+  const message = encodeURIComponent(
+    'Olá! Gostaria de saber mais sobre os serviços jurídicos da Dra. Laura Albuquerque. Poderia me ajudar?'
+  );
+
   return (
     <div className="grid grid-cols-1 grid-rows-1 w-full h-[500px] xl:h-[600px] relative">
       {isMobile ? (
@@ -41,7 +45,7 @@ export default function Banner() {
               className={`${responsiveLabel()} !mb-3`}
             />
             <a
-              href="https://wa.me/5554991184768"
+              href={`https://wa.me/5554991184768?text=${message}`}
               target="_blank"
               className={`${responsiveButton()} button-hover whitespace-nowrap apple-garamond body-large border-2 !py-1 !px-10 text-secondary rounded-full`}
             >

@@ -8,6 +8,7 @@ import Fields from './components/Fields';
 import Contact from './components/Contact';
 import Feedbacks from './components/Feedbacks';
 import Footer from './components/Footer';
+import WhatsAppButton from './components/WhatsAppButton';
 import '../public/assets/index.css';
 
 createRoot(document.getElementById('root')!).render(
@@ -20,5 +21,6 @@ createRoot(document.getElementById('root')!).render(
     <Contact />
     <Feedbacks />
     <Footer />
+    <WhatsAppButton />
   </StrictMode>
 );
