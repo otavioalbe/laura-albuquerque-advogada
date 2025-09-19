@@ -1,7 +1,9 @@
 import { useBreakpoints } from '../hooks/useBreakpoints';
+import { useGoogleAnalytics } from '../hooks/useGoogleAnalytics';
 
 function WhatsAppButton() {
   const { isMobile } = useBreakpoints();
+  const { trackWhatsAppClick } = useGoogleAnalytics();
 
   const handleWhatsAppClick = () => {
     const phoneNumber = '5554991184768';
@@ -9,6 +11,8 @@ function WhatsAppButton() {
       'Olá! Gostaria de saber mais sobre os serviços jurídicos da Dra. Laura Albuquerque. Poderia me ajudar?'
     );
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
+
+    trackWhatsAppClick('whatsapp_button');
     window.open(whatsappUrl, '_blank');
   };
 
