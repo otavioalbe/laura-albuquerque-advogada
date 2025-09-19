@@ -1,8 +1,10 @@
 import Container from './Container';
 import { useState, useEffect } from 'react';
+import { useGoogleAnalytics } from '../hooks/useGoogleAnalytics';
 
 export default function Contact() {
   const [isMapLoading, setIsMapLoading] = useState(true);
+  const { trackWhatsAppClick, trackEmailClick, trackSocialClick } = useGoogleAnalytics();
 
   useEffect(() => {
     const timeout = setTimeout(() => {
@@ -34,6 +36,7 @@ export default function Contact() {
                   href={`https://wa.me/5554991184768?text=${message}`}
                   target="_blank"
                   className="!text-secondary body-regular hover:underline"
+                  onClick={() => trackWhatsAppClick('contact_phone_link')}
                 >
                   (54) 99118-4768
                 </a>
@@ -44,6 +47,7 @@ export default function Contact() {
                   href="mailto:lauradcalbuquerque@outlook.com"
                   target="_blank"
                   className="!text-secondary body-regular hover:underline"
+                  onClick={() => trackEmailClick('contact_email_link')}
                 >
                   lauradcalbuquerque@outlook.com
                 </a>
@@ -83,6 +87,7 @@ export default function Contact() {
             href={`https://wa.me/5554991184768?text=${message}`}
             target="_blank"
             className="hover:scale-110 transition-all duration-300"
+            onClick={() => trackWhatsAppClick('contact_social_icon')}
           >
             <img src="./assets/icons/whatsapp.svg" alt="WhatsApp" className="w-12 h-12" />
           </a>
@@ -90,6 +95,7 @@ export default function Contact() {
             href="https://www.instagram.com/lauradcalbuquerque/"
             target="_blank"
             className="hover:scale-110 transition-all duration-300"
+            onClick={() => trackSocialClick('instagram', 'contact_social_icon')}
           >
             <img src="./assets/icons/instagram.svg" alt="Instagram" className="w-12 h-12" />
           </a>
@@ -97,6 +103,7 @@ export default function Contact() {
             href="https://www.linkedin.com/in/laura-albuquerque/"
             target="_blank"
             className="hover:scale-110 transition-all duration-300"
+            onClick={() => trackSocialClick('linkedin', 'contact_social_icon')}
           >
             <img src="./assets/icons/linkedin.svg" alt="LinkedIn" className="w-12 h-12" />
           </a>

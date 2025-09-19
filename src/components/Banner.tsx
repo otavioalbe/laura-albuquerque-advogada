@@ -1,8 +1,10 @@
 import { useBreakpoints } from '../hooks/useBreakpoints';
 import Container from './Container';
+import { useGoogleAnalytics } from '../hooks/useGoogleAnalytics';
 
 export default function Banner() {
   const { isMobile, isTablet } = useBreakpoints();
+  const { trackWhatsAppClick } = useGoogleAnalytics();
 
   const responsiveLabel = () => {
     if (isMobile) return 'w-[360px] h-[120px] !ml-[8px] !mt-[-300px]';
@@ -48,6 +50,7 @@ export default function Banner() {
               href={`https://wa.me/5554991184768?text=${message}`}
               target="_blank"
               className={`${responsiveButton()} button-hover whitespace-nowrap apple-garamond body-large border-2 !py-1 !px-10 text-secondary rounded-full`}
+              onClick={() => trackWhatsAppClick('banner_cta_button')}
             >
               {' '}
               Entre em contato{' '}
