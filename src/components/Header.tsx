@@ -1,16 +1,26 @@
 import { useState } from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { useBreakpoints } from '../hooks/useBreakpoints';
 import Hamburguer from './Hamburguer';
 
 function Header() {
   const { isMobile, isTablet } = useBreakpoints();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-      setIsMenuOpen(false);
+  const navigateToSection = (path: string, sectionId: string) => {
+    setIsMenuOpen(false);
+
+    if (location.pathname === path) {
+      // Se já estamos na rota, apenas faz scroll
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      // Navega para a rota que automaticamente fará o scroll
+      navigate(path);
     }
   };
 
@@ -31,25 +41,25 @@ function Header() {
           <div className="flex items-center md:gap-x-3 xl:gap-x-5 flex-shrink-0 !pr-4">
             <h1
               className="!font-serif !text-secondary !text-xl whitespace-nowrap cursor-pointer hover:opacity-80 transition-opacity"
-              onClick={() => scrollToSection('home')}
+              onClick={() => navigateToSection('/', 'home')}
             >
               Página Inicial
             </h1>
             <h1
               className="!font-serif !text-secondary !text-xl whitespace-nowrap cursor-pointer hover:opacity-80 transition-opacity"
-              onClick={() => scrollToSection('about')}
+              onClick={() => navigateToSection('/sobre', 'about')}
             >
               Sobre
             </h1>
             <h1
               className="!font-serif !text-secondary !text-xl whitespace-nowrap cursor-pointer hover:opacity-80 transition-opacity"
-              onClick={() => scrollToSection('fields')}
+              onClick={() => navigateToSection('/areas-de-atuacao', 'fields')}
             >
               Áreas de atuação
             </h1>
             <h1
               className="!font-serif !text-secondary !text-xl whitespace-nowrap cursor-pointer hover:opacity-80 transition-opacity"
-              onClick={() => scrollToSection('contact')}
+              onClick={() => navigateToSection('/contato', 'contact')}
             >
               Contato
             </h1>
@@ -69,25 +79,25 @@ function Header() {
           <div className="flex flex-col items-center justify-center gap-y-4">
             <h1
               className="!font-serif !text-secondary !header-2 cursor-pointer hover:opacity-80 transition-opacity"
-              onClick={() => scrollToSection('home')}
+              onClick={() => navigateToSection('/', 'home')}
             >
               Página Inicial
             </h1>
             <h1
               className="!font-serif !text-secondary !header-2 cursor-pointer hover:opacity-80 transition-opacity"
-              onClick={() => scrollToSection('about')}
+              onClick={() => navigateToSection('/sobre', 'about')}
             >
               Sobre
             </h1>
             <h1
               className="!font-serif !text-secondary !header-2 cursor-pointer hover:opacity-80 transition-opacity"
-              onClick={() => scrollToSection('fields')}
+              onClick={() => navigateToSection('/areas-de-atuacao', 'fields')}
             >
               Áreas de atuação
             </h1>
             <h1
               className="!font-serif !text-secondary !header-2 cursor-pointer hover:opacity-80 transition-opacity"
-              onClick={() => scrollToSection('contact')}
+              onClick={() => navigateToSection('/contato', 'contact')}
             >
               Contato
             </h1>
