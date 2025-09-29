@@ -9,6 +9,7 @@ import Contact from './components/Contact';
 import Feedbacks from './components/Feedbacks';
 import Footer from './components/Footer';
 import WhatsAppButton from './components/WhatsAppButton';
+import VideosSection from './components/VideosSection';
 
 function ScrollToSection() {
   const location = useLocation();
@@ -54,6 +55,7 @@ function MainContent() {
       <Header />
       <Banner />
       <About />
+      <VideosSection />
       <Differences />
       <Fields />
       <Contact />

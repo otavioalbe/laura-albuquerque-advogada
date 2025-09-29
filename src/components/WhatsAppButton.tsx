@@ -2,7 +2,7 @@ import { useBreakpoints } from '../hooks/useBreakpoints';
 import { useGoogleAnalytics } from '../hooks/useGoogleAnalytics';
 
 function WhatsAppButton() {
-  const { isMobile } = useBreakpoints();
+  const { isMobile, isDesktop } = useBreakpoints();
   const { trackWhatsAppClick } = useGoogleAnalytics();
 
   const handleWhatsAppClick = () => {
@@ -28,7 +28,9 @@ function WhatsAppButton() {
         </div>
       </div>
 
-      <div className="absolute bottom-full right-0 !py-2 !px-4 !bg-primary !text-white text-sm rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+      <div
+        className={`${isDesktop ? 'absolute' : 'hidden'} bottom-full right-0 !py-2 !px-4 !bg-primary !text-white text-sm rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap ${isMobile ? '!py-1 !px-3' : ''}`}
+      >
         Fale conosco no WhatsApp
         <div className="absolute top-full right-4 w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-primary"></div>
       </div>

@@ -46,7 +46,7 @@ export default function Differences() {
             }}
             autoplay={{
               delay: 4000,
-              disableOnInteraction: false,
+              disableOnInteraction: true,
             }}
             breakpoints={{
               768: {

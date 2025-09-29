@@ -5,7 +5,7 @@ export default function About() {
   return (
     <div
       id="about"
-      className="w-full bg-secondary relative shadow-[inset_0_0_50px_rgba(0,0,0,0.3)]"
+      className="w-full bg-secondary relative shadow-[inset_0_50px_50px_-50px_rgba(0,0,0,0.3)]"
     >
       <Container>
         <div className="flex xl:flex-row flex-col gap-x-10 gap-y-6 !py-10">
