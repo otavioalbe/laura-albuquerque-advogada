@@ -74,6 +74,7 @@ function App() {
         <Route path="/contato" element={<MainContent />} />
         <Route path="/sobre" element={<MainContent />} />
         <Route path="/areas-de-atuacao" element={<MainContent />} />
+        <Route path="*" element={<MainContent />} />
       </Routes>
     </Router>
   );
