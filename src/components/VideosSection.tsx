@@ -17,8 +17,10 @@ export default function VideosSection() {
       className="w-[300px] h-[533px] rounded-lg"
       src={video.videoPath}
       title={video.title}
-      allow="encrypted-media; gyroscope;"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowFullScreen
+      loading="lazy"
+      referrerPolicy="strict-origin-when-cross-origin"
     ></iframe>
   );
 
