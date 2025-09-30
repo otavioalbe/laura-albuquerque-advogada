@@ -1,4 +1,4 @@
-import Container from './Container';
+import Container from '../components/Container';
 import { useState, useEffect } from 'react';
 
 export default function Feedbacks() {

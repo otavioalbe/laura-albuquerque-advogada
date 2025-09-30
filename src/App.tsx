@@ -1,15 +1,15 @@
 import { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
-import Header from './components/Header';
-import About from './components/About';
-import Banner from './components/Banner';
-import Differences from './components/Differences';
-import Fields from './components/Fields';
-import Contact from './components/Contact';
-import Feedbacks from './components/Feedbacks';
-import Footer from './components/Footer';
+import Header from './sections/Header';
+import About from './sections/About';
+import Banner from './sections/Banner';
+import Differences from './sections/Differences';
+import Fields from './sections/Fields';
+import Contact from './sections/Contact';
+import Feedbacks from './sections/Feedbacks';
+import Footer from './sections/Footer';
 import WhatsAppButton from './components/WhatsAppButton';
-import VideosSection from './components/VideosSection';
+import VideosSection from './sections/VideosSection';
 
 function ScrollToSection() {
   const location = useLocation();

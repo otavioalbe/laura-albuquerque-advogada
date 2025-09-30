@@ -1,5 +1,5 @@
 import { useBreakpoints } from '../hooks/useBreakpoints';
-import Container from './Container';
+import Container from '../components/Container';
 import { useGoogleAnalytics } from '../hooks/useGoogleAnalytics';
 
 export default function Banner() {

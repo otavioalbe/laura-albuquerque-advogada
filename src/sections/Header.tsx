@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { useBreakpoints } from '../hooks/useBreakpoints';
-import Hamburguer from './Hamburguer';
+import Hamburguer from '../components/Hamburguer';
 
 function Header() {
   const { isMobile, isTablet } = useBreakpoints();

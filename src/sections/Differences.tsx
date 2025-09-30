@@ -1,7 +1,7 @@
 import { useDifferencesConstants } from '../constants/useDifferencesConstants';
 import { useBreakpoints } from '../hooks/useBreakpoints';
-import Container from './Container';
-import DifferenceCard from './DifferenceCard';
+import Container from '../components/Container';
+import DifferenceCard from '../components/DifferenceCard';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';

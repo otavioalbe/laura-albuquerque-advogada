@@ -1,4 +1,4 @@
-import Container from './Container';
+import Container from '../components/Container';
 import videos from '../constants/useVideosConstants';
 import type { VideoType } from '../types/VideoType';
 import { useBreakpoints } from '../hooks/useBreakpoints';

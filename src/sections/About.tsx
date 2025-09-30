@@ -1,4 +1,4 @@
-import Container from './Container';
+import Container from '../components/Container';
 import { useAboutConstants } from '../constants/useAboutConstants';
 
 export default function About() {
@@ -11,7 +11,7 @@ export default function About() {
         <div className="flex xl:flex-row flex-col gap-x-10 gap-y-6 !py-10">
           <div className="flex flex-col xl:w-[700px] w-full">
             <h1 className="apple-garamond header-1">SOBRE</h1>
-            <h2 className="apple-garamond header-2  !mt-[-8px]">Dra. Laura Albuquerque</h2>
+            <h2 className="apple-garamond header-2 !mt-[-8px]">Dra. Laura Albuquerque</h2>
             <h3 className="header-3 !mt-4">
               Advogada especialista em Direito de Família e Sucessões, com atuação nacional e
               atendimento humanizado.

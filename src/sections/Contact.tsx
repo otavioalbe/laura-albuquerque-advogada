@@ -1,4 +1,4 @@
-import Container from './Container';
+import Container from '../components/Container';
 import { useState, useEffect } from 'react';
 import { useGoogleAnalytics } from '../hooks/useGoogleAnalytics';
 

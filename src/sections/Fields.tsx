@@ -1,6 +1,6 @@
 import { useFieldsConstants } from '../constants/useFieldsConstants';
-import Container from './Container';
-import FieldCard from './FieldCard';
+import Container from '../components/Container';
+import FieldCard from '../components/FieldCard';
 
 export default function Fields() {
   return (
