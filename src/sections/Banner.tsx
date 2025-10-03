@@ -26,7 +26,7 @@ export default function Banner() {
     <div className="grid grid-cols-1 grid-rows-1 w-full h-[500px] xl:h-[600px] relative">
       {isMobile ? (
         <img
-          src="./assets/images/banner.png"
+          src="./assets/images/banner-mob.png"
           alt="banner"
           className="!z-0 col-start-1 row-start-1 object-cover h-[500px] xl:h-[600px] w-full"
         />
