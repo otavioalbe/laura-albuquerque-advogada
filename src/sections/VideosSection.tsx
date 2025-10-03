@@ -3,7 +3,7 @@ import videos from '../constants/useVideosConstants';
 import type { VideoType } from '../types/VideoType';
 import { useBreakpoints } from '../hooks/useBreakpoints';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, FreeMode } from 'swiper/modules';
+import { Navigation, FreeMode } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -37,7 +37,7 @@ export default function VideosSection() {
           {!isDesktop && (
             <div className="relative">
               <Swiper
-                modules={[Pagination, FreeMode]}
+                modules={[Navigation, FreeMode]}
                 spaceBetween={16}
                 slidesPerView={1}
                 centeredSlides={true}
@@ -48,9 +48,9 @@ export default function VideosSection() {
                   enabled: false,
                   sticky: true,
                 }}
-                pagination={{
-                  clickable: true,
-                  dynamicBullets: true,
+                navigation={{
+                  nextEl: '.swiper-button-next-videos',
+                  prevEl: '.swiper-button-prev-videos',
                 }}
                 breakpoints={{
                   768: {
@@ -59,12 +59,45 @@ export default function VideosSection() {
                     spaceBetween: 20,
                   },
                 }}
-                className="w-full pb-12"
+                className="w-full"
               >
                 {videos.map((video: VideoType, index: number) => (
                   <SwiperSlide key={index}>{renderVideoIframe(video, index)}</SwiperSlide>
                 ))}
               </Swiper>
+
+              {/* Setas de navegação customizadas */}
+              <div className="swiper-button-prev-videos absolute left-2 top-1/2 transform -translate-y-1/2 z-10 w-10 h-10 bg-white/80 hover:bg-white rounded-full shadow-lg flex items-center justify-center cursor-pointer transition-all duration-200 hover:scale-110">
+                <svg
+                  className="w-5 h-5 text-gray-700"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M15 19l-7-7 7-7"
+                  />
+                </svg>
+              </div>
+
+              <div className="swiper-button-next-videos absolute right-2 top-1/2 transform -translate-y-1/2 z-10 w-10 h-10 bg-white/80 hover:bg-white rounded-full shadow-lg flex items-center justify-center cursor-pointer transition-all duration-200 hover:scale-110">
+                <svg
+                  className="w-5 h-5 text-gray-700"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </div>
             </div>
           )}
         </div>
