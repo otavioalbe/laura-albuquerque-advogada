@@ -3,6 +3,11 @@
     {
       "source": "/((?!api/.*).*)",
       "destination": "/index.html"
+    },
+    {
+      "source": "/divorcio",
+      "destination": "https://landing-page-divorcio.vercel.app/",
+      "permanent": true
     }
   ],
   "headers": [
