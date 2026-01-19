@@ -6,8 +6,7 @@
     },
     {
       "source": "/divorcio",
-      "destination": "https://landing-page-divorcio.vercel.app/",
-      "permanent": true
+      "destination": "https://landing-page-divorcio.vercel.app"
     }
   ],
   "headers": [
