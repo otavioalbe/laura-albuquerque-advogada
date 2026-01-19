@@ -1,9 +1,12 @@
 {
-  "rewrites": [
+  "redirects": [
     {
       "source": "/divorcio",
-      "destination": "https://landing-page-divorcio.vercel.app"
-    },
+      "destination": "https://landing-page-divorcio.vercel.app",
+      "permanent": false
+    }
+  ],
+  "rewrites": [
     {
       "source": "/((?!api/.*).*)",
       "destination": "/index.html"
