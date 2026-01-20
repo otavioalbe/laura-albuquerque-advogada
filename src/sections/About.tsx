@@ -19,7 +19,7 @@ export default function About() {
             <div className="body-large !mt-4 whitespace-pre-line">{useAboutConstants()}</div>
           </div>
           <div className="flex-1 flex justify-center items-center">
-            <img src="./assets/images/about.png" alt="about" />
+            <img src="./assets/images/about.webp" alt="about" />
           </div>
         </div>
       </Container>

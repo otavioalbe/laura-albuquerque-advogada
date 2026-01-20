@@ -34,7 +34,7 @@ export default function Banner() {
         <div
           className="!z-0 col-start-1 row-start-1 h-[500px] xl:h-[600px] w-full bg-cover bg-center bg-fixed"
           style={{
-            backgroundImage: 'url("./assets/images/banner.png")',
+            backgroundImage: 'url("./assets/images/banner.webp")',
           }}
         />
       )}
